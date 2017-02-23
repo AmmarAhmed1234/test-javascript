@@ -88,21 +88,19 @@ document.getElementById("filler").innerHTML += x;
 function myFunction() {
     var age, voteable;
     age = document.getElementById("age").value;
-    voteable = (age > 50) ? "Try again...!":"You are passed";
+    voteable = (age > 50) ? "You are passed":"Try again...!";
     document.getElementById("demo").innerHTML = voteable;
 }
 
 ///////////////********** Question no 6 ***********////////////
 
-var k1 = 1,
-    k2= 2,
-    k3= 3;
+var k1, k2, k3;
 document.getElementById("declear").innerHTML= k1+k2+k3;
 
 /////////////////// Question 7 ///////////////////
 
     var str = document.getElementById("demos").innerHTML;
-    var txt = str.replace("the","Ammar");
+    var txt = str.replace(/the/g,"Ammar");
     document.getElementById("demos").innerHTML = txt;
 
 //////////////////
